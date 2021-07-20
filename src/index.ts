@@ -5,5 +5,5 @@ interface Color{
 const color:Color = {
   red:"fuck you"
 }
-
+let k
 export default color
