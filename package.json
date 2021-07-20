@@ -10,7 +10,8 @@
   "scripts": {
     "clean": "del ./build/* ",
     "build": "yarn clean && tsc",
-    "pub": "git add . && git commit -m 'Updates' && yarn build && npm version patch && npm publish "
+    "prepare": "git add . && git commit -m 'Updates' && yarn build && npm version patch && npm publish ",
+    "pub": "npm run prepare"
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
