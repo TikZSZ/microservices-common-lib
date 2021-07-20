@@ -1,6 +1,6 @@
 {
   "name": "@tikzsztickets/common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "clean": "del ./build/* ",
-    "build": "yarn clean && tsc"
+    "build": "yarn clean && tsc",
+    "pub": "yarn "
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
