@@ -4,6 +4,7 @@ import { CustomError } from "./custom-error";
 export class RequestValidationError extends CustomError{
   constructor(private errors: ValidationError[]) {
     super('Invalid request parameters');
+    Object.setPrototypeOf(this, RequestValidationError.prototype)
   }
   serializeError() {
     return this.errors.map((err) => {
