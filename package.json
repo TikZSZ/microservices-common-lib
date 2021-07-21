@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "del ./build/* ",
     "build": "npm run clean && tsc -p .",
-    "pub": "git add . && git commit -m 'Updates' && npm run && npm version patch && npm publish "
+    "pub": "git add . && git commit -m 'Updates' && npm run build && npm version patch && npm publish "
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
