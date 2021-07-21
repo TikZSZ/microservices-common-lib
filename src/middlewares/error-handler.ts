@@ -17,6 +17,7 @@ export function errorHandler(
   next: NextFunction
 ): void {
   if (err.name==="CustomError") {
+    console.log("hello World"); 
     const error = err as CustomError
     res.status(error.StatusCode).send({errors:error.serializeError()});
     return
