@@ -1,6 +1,6 @@
 {
   "name": "@tikzsztickets/common",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "license": "MIT",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
