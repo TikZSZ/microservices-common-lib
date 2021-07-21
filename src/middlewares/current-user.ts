@@ -1,13 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-
-import { CustomCookieSessionObject } from "../interface/CookieSessonObject";
 import jwt from "jsonwebtoken";
 import { UserPayload } from "../interface/UserPayload";
-
-
-
-
-
 
 export function currentUser(
   req: Request,

@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from "express";
 import { NotAuthorizedError } from "../errors/not-authorized-error";
-import { CustomCookieSessionObject } from "../interface/CookieSessonObject";
 
 
 

@@ -21,10 +21,11 @@ export * from "./interface/UserPayload"
 
 
 
+
 declare global{
   namespace Express {
     interface Request {
-      currentUser?:UserPayload
+      currentUser?:UserPayload|null
       session?:CustomCookieSessionObject | null
     }
   }
