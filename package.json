@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "del ./build/* ",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc -p .",
     "pub": "git add . && git commit -m 'Updates' && npm run && npm version patch && npm publish "
   },
   "devDependencies": {
