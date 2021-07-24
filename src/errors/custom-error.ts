@@ -1,4 +1,4 @@
-import { ErrorStructure } from "../middlewares/error-handler"
+import { ErrorStructure } from "../interface/ErrorStructure"
 
 export abstract class CustomError extends Error{
   abstract StatusCode:number

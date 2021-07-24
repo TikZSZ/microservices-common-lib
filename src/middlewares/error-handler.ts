@@ -1,14 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 import { CustomError } from "../errors/custom-error";
+import { ErrorStructure,ErrorResponseBody } from "../interface/ErrorStructure";
 
-export interface ErrorStructure {
-  message: string;
-  field?: string;
-}
 
-export interface ErrorResponseBody {
-  errors: ErrorStructure[];
-}
 
 export function errorHandler(
   err: Error,
