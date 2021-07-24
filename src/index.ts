@@ -17,7 +17,7 @@ export * from "./interface/AuthenticationBody"
 export * from "./interface/CookieSessonObject"
 export * from "./interface/UserEnum"
 export * from "./interface/UserPayload"
-
+export * from "./interface/ErrorStructure"
 
 
 //
