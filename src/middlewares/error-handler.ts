@@ -14,6 +14,7 @@ export function errorHandler(
     res.status(err.StatusCode).send({errors:err.serializeError()});
     return
   }
+  console.error(err)
   res.status(400).send({
     errors: [
       {

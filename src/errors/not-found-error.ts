@@ -9,7 +9,7 @@ export class NotFoundError extends CustomError {
   serializeError() {
     return [
       {
-        message: "404 route not found"
+        message: "404 not found"
       },
     ];
   }
