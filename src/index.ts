@@ -6,8 +6,6 @@ export * from "./middlewares"
 export * from "./interface"
 export * from "./events"
 
-//
-
 declare global{
   namespace Express {
     interface Request {
