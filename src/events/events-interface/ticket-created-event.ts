@@ -1,5 +1,6 @@
 import { Subjects } from "../subjects";
 
+
 export interface TicketCreatedEvent {
   subject: Subjects.TicketCreated;
   data: {
@@ -7,5 +8,6 @@ export interface TicketCreatedEvent {
     title: string;
     price: number;
     userId:string
-  };
+  }
 }
+

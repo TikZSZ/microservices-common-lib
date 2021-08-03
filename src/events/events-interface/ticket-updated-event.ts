@@ -7,5 +7,5 @@ export interface TickedUpdatedEvent {
     title: string;
     price: number;
     userId:string;
-  };
+  }
 }
