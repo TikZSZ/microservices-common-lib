@@ -5,6 +5,7 @@ export interface OrderCancelledEvent{
   subject: Subjects.OrderCancelled;
   data: {
     orderId:string,
+    version:number,
     status: OrderStatus.Cancelled,
     userId:string,
     expiresAt:string,
