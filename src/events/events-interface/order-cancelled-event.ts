@@ -7,8 +7,6 @@ export interface OrderCancelledEvent{
     orderId:string,
     version:number,
     status: OrderStatus.Cancelled,
-    userId:string,
-    expiresAt:string,
     ticket: {
       ticketId:string,
       price: number
