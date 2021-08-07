@@ -10,7 +10,7 @@ export abstract class Listener<T extends Event> {
   abstract subject: T["subject"];
   abstract queGroupName: string;
   abstract onMessage(eventData: T["data"], msg: Message): void;
-  private client: Stan;
+  protected client: Stan;
   protected ackWait: number = 5 * 1000;
 
   constructor(client: Stan) {
@@ -23,7 +23,7 @@ export abstract class Listener<T extends Event> {
       .setDeliverAllAvailable()
       .setManualAckMode(true)
       .setAckWait(this.ackWait)
-      .setDurableName(this.queGroupName);
+      .setDurableName(this.queGroupName)
   }
 
   listen() {
